@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambima Agency | South Asian Creator & Business Marketing</title>
+  <meta name="description" content="Ambima Agency connects South Asian content creators with top brands for sponsorships and provides full-service business marketing — websites, social media, event booking, catering & more. NYC-based, serving creators nationwide." />
+  <meta name="keywords" content="South Asian influencer marketing, creator sponsorships, NYC marketing agency, TikTok Instagram sponsorships, business marketing, event booking, social media management, South Asian creators" />
+  <meta name="author" content="Ambima Agency" />
+  <meta property="og:title" content="Ambima Agency | South Asian Creator & Business Marketing" />
+  <meta property="og:description" content="We connect South Asian content creators with brands and offer full business services. Join free today." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://ambima.agency/" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MarketingAgency",
+    "name": "Ambima Agency",
+    "description": "Marketing agency connecting South Asian content creators with brands and offering business services including web development, social media management, event booking, and catering.",
+    "areaServed": ["New York City", "United States"],
+    "serviceType": ["Influencer Marketing", "Web Development", "Social Media Management", "Event Planning", "Catering"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Marcellus&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #B8962E;
+      --gold-light: #D4AF5A;
+      --gold-pale: #E8D5A3;
+      --brown-dark: #4A3520;
+      --brown-mid: #6B4F2E;
+      --cream: #F5F0E8;
+      --cream-dark: #EDE5D5;
+      --white: #FDFAF5;
+      --text: #3A2D1E;
+      --text-light: #6B5740;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ─── NOISE TEXTURE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.4;
+    }
+
+    /* ─── DECORATIVE FLORALS ─── */
+    .floral-svg {
+      position: absolute;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 1.2rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s, box-shadow 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(245, 240, 232, 0.97);
+      box-shadow: 0 2px 30px rgba(74, 53, 32, 0.12);
+      backdrop-filter: blur(10px);
+    }
+    .nav-logo {
+      font-family: 'Marcellus', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .nav-logo span { color: var(--brown-dark); font-size: 0.7em; display: block; letter-spacing: 0.25em; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--brown-mid);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      padding: 0.6rem 1.6rem;
+      border: 1px solid var(--gold);
+      color: var(--gold) !important;
+      border-radius: 0;
+      transition: all 0.3s !important;
+    }
+    .nav-cta:hover { background: var(--gold) !important; color: var(--white) !important; }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+    }
+    .hero-bg-circle {
+      position: absolute;
+      width: 70vw;
+      height: 70vw;
+      max-width: 700px;
+      max-height: 700px;
+      border: 1.5px solid var(--gold-pale);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotateSlow 60s linear infinite;
+    }
+    .hero-bg-circle-2 {
+      position: absolute;
+      width: 85vw;
+      height: 85vw;
+      max-width: 850px;
+      max-height: 850px;
+      border: 0.5px solid rgba(184, 150, 46, 0.15);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @keyframes rotateSlow { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+    .hero-content {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      animation: fadeUp 1.2s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 1.2s 0.2s ease both;
+    }
+    .hero-title {
+      font-family: 'Marcellus', serif;
+      font-size: clamp(3.5rem, 9vw, 7rem);
+      color: var(--gold);
+      line-height: 1;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      animation: fadeUp 1.2s 0.3s ease both;
+    }
+    .hero-subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: var(--brown-mid);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+      text-decoration: underline;
+      text-decoration-color: var(--gold);
+      text-underline-offset: 6px;
+      animation: fadeUp 1.2s 0.4s ease both;
+    }
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      font-style: italic;
+      color: var(--brown-mid);
+      margin: 2rem auto 0;
+      max-width: 520px;
+      line-height: 1.6;
+      animation: fadeUp 1.2s 0.5s ease both;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+      margin-top: 2.5rem;
+      animation: fadeUp 1.2s 0.6s ease both;
+    }
+    .btn-primary {
+      padding: 0.85rem 2.4rem;
+      background: var(--gold);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.3s;
+      border: 1px solid var(--gold);
+      font-family: 'Raleway', sans-serif;
+    }
+    .btn-primary:hover { background: var(--brown-dark); border-color: var(--brown-dark); }
+    .btn-secondary {
+      padding: 0.85rem 2.4rem;
+      background: transparent;
+      color: var(--brown-dark);
+      text-decoration: none;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.3s;
+      border: 1px solid var(--brown-mid);
+      font-family: 'Raleway', sans-serif;
+    }
+    .btn-secondary:hover { background: var(--brown-dark); color: var(--white); border-color: var(--brown-dark); }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 7rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    .section-title {
+      font-family: 'Marcellus', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--brown-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      line-height: 1.15;
+    }
+    .section-title-gold { color: var(--gold); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 8px; }
+    .section-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.5rem 0 2rem;
+    }
+    .section-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--brown-mid);
+    }
+
+    /* ─── WHO ARE WE ─── */
+    #about { background: var(--cream-dark); position: relative; overflow: hidden; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-circle-outer {
+      width: 340px;
+      height: 340px;
+      border: 2.5px solid var(--brown-mid);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .about-circle-inner {
+      font-family: 'Marcellus', serif;
+      text-align: center;
+    }
+    .about-circle-inner .big { font-size: 3.5rem; color: var(--gold); display: block; letter-spacing: 0.1em; }
+    .about-circle-inner .small { font-size: 0.85rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--brown-dark); }
+    .about-badge {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white);
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.4;
+      bottom: 10px;
+      right: -10px;
+    }
+    .highlight-box {
+      margin-top: 2rem;
+      padding: 1.5rem 2rem;
+      border-left: 3px solid var(--gold);
+      background: rgba(184, 150, 46, 0.06);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--brown-mid);
+      line-height: 1.7;
+    }
+
+    /* ─── SERVICES TABS ─── */
+    #services { background: var(--white); }
+    .services-tabs {
+      display: flex;
+      gap: 0;
+      margin: 2.5rem 0 0;
+      border-bottom: 1px solid var(--gold-pale);
+    }
+    .tab-btn {
+      padding: 0.9rem 2rem;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-light);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+    .tab-btn:hover { color: var(--gold); }
+    .tab-panel { display: none; padding: 3rem 0 0; }
+    .tab-panel.active { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
+
+    .service-card {
+      background: var(--cream);
+      padding: 2rem 2rem 2rem 1.8rem;
+      border-left: 3px solid var(--gold);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(74, 53, 32, 0.1);
+    }
+    .service-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+    .service-card h3 {
+      font-family: 'Marcellus', serif;
+      font-size: 1.1rem;
+      color: var(--brown-dark);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+    .service-card p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--brown-mid);
+      line-height: 1.7;
+    }
+
+    .services-list-panel ul { list-style: none; padding: 0; }
+    .services-list-panel li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--gold-pale);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--brown-mid);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .services-list-panel li::before {
+      content: '◆';
+      font-size: 0.5rem;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* ─── ELIGIBILITY ─── */
+    #eligibility { background: var(--brown-dark); color: var(--cream); }
+    #eligibility .section-title { color: var(--gold-pale); }
+    #eligibility .section-label { color: var(--gold-light); }
+    .eligibility-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .elig-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(184, 150, 46, 0.3);
+      padding: 2rem;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .elig-card:hover {
+      border-color: var(--gold);
+      background: rgba(184, 150, 46, 0.06);
+    }
+    .elig-num {
+      font-family: 'Marcellus', serif;
+      font-size: 3rem;
+      color: rgba(184, 150, 46, 0.25);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .elig-card h3 {
+      font-family: 'Marcellus', serif;
+      font-size: 1rem;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    .elig-card p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--gold-pale);
+      line-height: 1.6;
+    }
+    .free-badge {
+      display: inline-block;
+      margin-top: 3rem;
+      padding: 1rem 2.5rem;
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      letter-spacing: 0.05em;
+    }
+    .free-badge strong { color: var(--gold); font-style: normal; font-size: 1.6rem; }
+
+    /* ─── PROCESS ─── */
+    #process { background: var(--cream-dark); }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 3.5rem;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 12.5%;
+      width: 75%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .step {
+      text-align: center;
+      padding: 0 1.5rem;
+      position: relative;
+    }
+    .step-num {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--white);
+      font-family: 'Marcellus', serif;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .step h3 {
+      font-family: 'Marcellus', serif;
+      font-size: 0.95rem;
+      color: var(--brown-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+    .step p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--brown-mid);
+      line-height: 1.6;
+    }
+
+    /* ─── CTA ─── */
+    #cta {
+      background: linear-gradient(135deg, var(--gold) 0%, #9A7A22 100%);
+      padding: 6rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    #cta .section-inner { position: relative; z-index: 1; }
+    #cta h2 {
+      font-family: 'Marcellus', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+    #cta p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 2.5rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-white {
+      padding: 0.9rem 2.6rem;
+      background: var(--white);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 700;
+      transition: all 0.3s;
+      border: 1px solid var(--white);
+      font-family: 'Raleway', sans-serif;
+      display: inline-block;
+    }
+    .btn-white:hover { background: transparent; color: var(--white); }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .contact-method {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      padding: 1.8rem 0;
+      border-bottom: 1px solid var(--gold-pale);
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+    .contact-method h4 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    .contact-method p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--brown-mid);
+    }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--gold-pale);
+      background: var(--cream);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.3s;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--brown-dark);
+      color: var(--gold-pale);
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Marcellus', serif;
+      font-size: 2rem;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .footer-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--gold-pale);
+      margin-top: 0.3rem;
+      letter-spacing: 0.2em;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .footer-links a {
+      text-decoration: none;
+      color: var(--gold-pale);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-divider { width: 40px; height: 1px; background: rgba(184,150,46,0.4); margin: 1.5rem auto; }
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(184,150,46,0.5);
+      letter-spacing: 0.1em;
+    }
+
+    /* ─── MOBILE MENU ─── */
+    .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 1.5px; background: var(--brown-dark); transition: all 0.3s; }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--white);
+      z-index: 200;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: 'Marcellus', serif;
+      font-size: 1.8rem;
+      color: var(--brown-dark);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: color 0.3s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--brown-dark);
+    }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal { opacity: 0; transform: translateY(25px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .about-grid, .contact-grid, .tab-panel.active { grid-template-columns: 1fr; gap: 2.5rem; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .process-steps::before { display: none; }
+      .eligibility-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .about-visual { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="#hero" class="nav-logo">Ambima<span>Agency</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#eligibility">Creators</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <button class="mobile-close" onclick="document.querySelector('.mobile-menu').classList.remove('open')">✕</button>
+    <a href="#about" onclick="document.querySelector('.mobile-menu').classList.remove('open')">About</a>
+    <a href="#services" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Services</a>
+    <a href="#eligibility" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Creators</a>
+    <a href="#process" onclick="document.querySelector('.mobile-menu').classList.remove('open')">How It Works</a>
+    <a href="#contact" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <!-- Decorative floral SVGs -->
+    <svg class="floral-svg" style="top:-40px;left:-60px;width:320px;" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 160 Q60 100 100 80 Q140 60 160 40" stroke="#B8962E" stroke-width="1.2" fill="none"/>
+      <circle cx="100" cy="80" r="18" stroke="#B8962E" stroke-width="1" fill="none"/>
+      <circle cx="160" cy="40" r="12" stroke="#B8962E" stroke-width="1" fill="none"/>
+      <path d="M85 68 Q90 55 100 62 Q110 55 115 68" stroke="#B8962E" stroke-width="1" fill="none"/>
+    </svg>
+    <svg class="floral-svg" style="bottom:-20px;right:-40px;width:280px;transform:scaleX(-1);" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 160 Q60 100 100 80 Q140 60 160 40" stroke="#B8962E" stroke-width="1.2" fill="none"/>
+      <circle cx="100" cy="80" r="18" stroke="#B8962E" stroke-width="1" fill="none"/>
+      <circle cx="160" cy="40" r="12" stroke="#B8962E" stroke-width="1" fill="none"/>
+      <path d="M85 68 Q90 55 100 62 Q110 55 115 68" stroke="#B8962E" stroke-width="1" fill="none"/>
+    </svg>
+
+    <div class="hero-bg-circle-2"></div>
+    <div class="hero-bg-circle"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">South Asian Creator & Business Marketing</p>
+      <h1 class="hero-title">Ambima</h1>
+      <p class="hero-subtitle">Agency</p>
+      <p class="hero-tagline">We connect creators with brands, and help businesses grow — let us handle the hard work.</p>
+      <div class="hero-actions">
+        <a href="#eligibility" class="btn-primary">Join as Creator</a>
+        <a href="#services" class="btn-secondary">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="section-label">Who Are We</span>
+          <h2 class="section-title section-title-gold">Built for South Asian Creators & Businesses</h2>
+          <div class="section-divider"></div>
+          <p class="section-body">
+            Ambima is a marketing agency that helps South Asian content creators get connected to companies, opening doors to sponsorships and brand partnerships. Beyond creators, we provide full-service business solutions — from websites and storefronts to advertising, event booking, and beyond.
+          </p>
+          <p class="section-body" style="margin-top:1rem;">
+            We are local to the NYC area, but our online capabilities allow us to serve clients and creators nationwide.
+          </p>
+          <div class="highlight-box">
+            "All you have to do is let us know what you need, and we will take care of the rest."
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-circle-outer">
+            <div class="about-circle-inner">
+              <span class="big">NYC</span>
+              <span class="small">Based · Nationwide Online</span>
+            </div>
+            <div class="about-badge">Free to<br>Join<br>Today</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-inner">
+      <span class="section-label reveal">What We Offer</span>
+      <h2 class="section-title reveal">Our Services</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="services-tabs reveal">
+        <button class="tab-btn active" onclick="switchTab('creators', this)">For Creators</button>
+        <button class="tab-btn" onclick="switchTab('business', this)">For Businesses</button>
+      </div>
+
+      <!-- CREATORS TAB -->
+      <div class="tab-panel active" id="tab-creators">
+        <div>
+          <div class="service-card" style="margin-bottom:1.5rem;">
+            <div class="service-icon">🤝</div>
+            <h3>Brand Connections</h3>
+            <p>We connect you with vetted companies actively seeking South Asian content creators for sponsorships — so you can focus on making content, not chasing deals.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📩</div>
+            <h3>Sponsorship Deals</h3>
+            <p>We negotiate and secure sponsorships for your upcoming videos. No awkward cold emails — we handle outreach, follow-ups, and all communications on your behalf.</p>
+          </div>
+        </div>
+        <div>
+          <div class="service-card" style="margin-bottom:1.5rem;">
+            <div class="service-icon">🆓</div>
+            <h3>Completely Free</h3>
+            <p>Joining the Ambima creator network costs nothing. Sign up, meet the eligibility criteria, and let us go to work for you — zero fees, zero risk.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📈</div>
+            <h3>Growth Strategy</h3>
+            <p>Beyond sponsorships, we provide guidance on growing your audience and maximizing engagement across Instagram, TikTok, and other major platforms.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUSINESS TAB -->
+      <div class="tab-panel" id="tab-business">
+        <div>
+          <div class="service-card" style="margin-bottom:1.5rem;">
+            <div class="service-icon">🌐</div>
+            <h3>Website & Storefront Design</h3>
+            <p>We build beautiful, conversion-focused websites and online storefronts tailored to your brand identity and business goals.</p>
+          </div>
+          <div class="service-card" style="margin-bottom:1.5rem;">
+            <div class="service-icon">📱</div>
+            <h3>Social Media Management</h3>
+            <p>We run your social media pages — content strategy, posting, engagement, and analytics — so your online presence always stays sharp.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📣</div>
+            <h3>Advertising & Campaigns</h3>
+            <p>From digital ad campaigns to influencer partnerships, we design and execute advertising strategies that drive real results for your business.</p>
+          </div>
+        </div>
+        <div>
+          <div class="service-card" style="margin-bottom:1.5rem;">
+            <div class="service-icon">🎉</div>
+            <h3>Event Booking & Planning</h3>
+            <p>Our experienced event planners coordinate every detail — venue, logistics, vendors — so your events run flawlessly. We have years of experience in the NYC area.</p>
+          </div>
+          <div class="service-card" style="margin-bottom:1.5rem;">
+            <div class="service-icon">🍽️</div>
+            <h3>Catering Coordination</h3>
+            <p>We connect you with exceptional catering services for events large and small, handling all coordination so you can enjoy the occasion.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Custom Solutions</h3>
+            <p>Need something not on the list? We're flexible. Tell us your challenge and we'll craft a bespoke solution for your business.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELIGIBILITY -->
+  <section id="eligibility">
+    <div class="section-inner">
+      <span class="section-label reveal">Creator Program</span>
+      <h2 class="section-title reveal" style="color:var(--gold-light);">Are You Eligible?</h2>
+      <div class="section-divider reveal"></div>
+      <p class="section-body reveal" style="color:var(--gold-pale);max-width:600px;">
+        Our agency accepts South Asian creators ready to take their content to the next level. Here's what we look for:
+      </p>
+
+      <div class="eligibility-grid">
+        <div class="elig-card reveal">
+          <div class="elig-num">01</div>
+          <h3>Follower Count</h3>
+          <p>You have 5K–100K+ followers on major platforms like Instagram or TikTok. Micro and macro influencers welcome.</p>
+        </div>
+        <div class="elig-card reveal">
+          <div class="elig-num">02</div>
+          <h3>Consistent Traction</h3>
+          <p>Your content shows consistently good engagement — views, likes, shares — demonstrating an active, invested audience.</p>
+        </div>
+        <div class="elig-card reveal">
+          <div class="elig-num">03</div>
+          <h3>Content Creator</h3>
+          <p>You actively create and publish content on a regular basis and are committed to growing your platform.</p>
+        </div>
+        <div class="elig-card reveal">
+          <div class="elig-num">04</div>
+          <h3>Ready to Partner</h3>
+          <p>You're open to brand collaborations and excited to represent companies that align with your personal brand and values.</p>
+        </div>
+      </div>
+
+      <div class="free-badge reveal">
+        Joining is always <strong>100% FREE</strong> — just sign up and we'll follow up with you.
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="section-inner">
+      <span class="section-label reveal">The Process</span>
+      <h2 class="section-title reveal">How It Works</h2>
+      <div class="section-divider reveal"></div>
+      <div class="process-steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h3>Sign Up Free</h3>
+          <p>Create your free profile via our link in bio or DM us directly. Takes minutes.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h3>We Review</h3>
+          <p>Our team reviews your profile, follower count, and engagement metrics.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h3>We Connect</h3>
+          <p>We match you with brands and companies looking for creators like you.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">4</div>
+          <h3>You Create</h3>
+          <p>You focus on content — we handle negotiations, follow-ups, and logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section id="cta">
+    <div class="section-inner">
+      <h2>Ready to Work Together?</h2>
+      <p>Whether you're a creator seeking sponsorships or a business ready to grow — we're here.</p>
+      <a href="#contact" class="btn-white">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <span class="section-label reveal">Reach Out</span>
+      <h2 class="section-title reveal">Get In Contact</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-method">
+            <div class="contact-icon">✉</div>
+            <div>
+              <h4>Send a DM</h4>
+              <p>We respond quickly. DM us on Instagram or TikTok and we'll get back to you fast.</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-icon">🔗</div>
+            <div>
+              <h4>Link in Bio</h4>
+              <p>Check out our link in bio for more information and to complete the sign-up form.</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Local to the NYC area. Online services available nationwide.</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-icon">⏱</div>
+            <div>
+              <h4>Response Time</h4>
+              <p>We pride ourselves on fast responses. Expect a reply within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Last name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="hello@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="service">I'm interested in</label>
+              <select id="service">
+                <option value="">Select a service...</option>
+                <option>Creator Agency / Sponsorships</option>
+                <option>Website or Storefront</option>
+                <option>Social Media Management</option>
+                <option>Event Booking & Planning</option>
+                <option>Catering</option>
+                <option>Advertising</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us a bit about yourself or your business..."></textarea>
+            </div>
+            <button class="btn-primary" onclick="handleSubmit()" style="border:none;cursor:pointer;width:100%;font-size:0.75rem;padding:1rem;">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Ambima</div>
+    <div class="footer-tagline">Agency</div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#eligibility">Creators</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2025 Ambima Agency · NYC Area · All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Tab switching
+    function switchTab(tab, btn) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + tab).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Form submit
+    function handleSubmit() {
+      const email = document.getElementById('email').value;
+      const name = document.getElementById('fname').value;
+      if (!name || !email) {
+        alert('Please fill in your name and email.');
+        return;
+      }
+      alert('Thank you, ' + name + '! We\'ll be in touch shortly.');
+    }
+  </script>
+</body>
+</html>
